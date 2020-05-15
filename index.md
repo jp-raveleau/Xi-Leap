@@ -13,7 +13,7 @@
 
     </head>
 
-<span id="xileap"></span><h1>Frictionless DR with Xi Leap<a class="headerlink" href="#frictionless-dr-with-xi-leap" title="Permalink to this headline">¶</a></h1>
+<span id="xileap"></span><h1>vExpert Session - Frictionless DR with Xi Leap<a class="headerlink" href="#frictionless-dr-with-xi-leap" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>This lab has limited capacity. See a Xi Leap proctor at <strong>TABLE 6</strong> to <a class="reference external" href="https://docs.google.com/spreadsheets/d/1t4HaHDfVxGy5y7q8pwsz4_h5s_g2VHA3ec8Mj6z7TUM/edit#gid=0">sign up</a> for an available Xi Leap cluster.</p>
