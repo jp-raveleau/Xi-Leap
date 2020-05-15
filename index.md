@@ -14,6 +14,8 @@
     </head>
 
 <span id="xileap"></span><h1>vExpert Session - Frictionless DR with Xi Leap<a class="headerlink" href="#frictionless-dr-with-xi-leap" title="Permalink to this headline">¶</a></h1>
+<li>
+</li>
 <p>Legacy disaster recovery configurations, which are created with Prism Element, use protection domains and third-party integrations to protect VMs, and they replicate data between on- premises Nutanix clusters. Protection domains provide limited flexibility in terms of supporting operations such as VM boot order and require you to perform manual tasks to protect new VMs as an application scales up.</p>
 <p>Leap uses an entity-centric approach and runbook-like automation to recover applications. It uses categories to group the entities to be protected and to automate the protection of new entities as the application scales. Application recovery is more flexible with network mappings, configurable stages to enforce a boot order, and optional inter-stage delays. Application recovery can also be validated and tested without affecting production workloads. All the configuration information that an application requires upon failover are synchronized to the recovery location.</p>
 <p>You can use Leap between two physical data centers or between a physical data center and Xi Cloud Services. Leap works with pairs of physically isolated locations called availability zones. One availability zone serves as the primary location for an application while a paired availability zone serves as the recovery location. While the primary availability zone is an on-premises Prism Central instance, the recovery availability zone can be either on-premises or in Xi Cloud Services.</p>
@@ -28,12 +30,13 @@
 </li>
 <li><p class="first">Provide your <strong>contact informations</strong> and click <strong>Request Test Drive</strong>. Wait for the Nutanix e-mail with all credentials (look in your spam folder if necessary)</p>
 <div class="figure">
-<img alt="../../_images/TestDrive.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/1109.png" />
+<img alt="../../_images/TestDrive.png" src="../../_images/TestDrive.png" />
 </div>
 </li>
 <div class="figure">
-<img alt="../../_images/mailreceived.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/1109.png" />
+<img alt="../../_images/mailreceived.png" src="../../_images/mailreceived.png" />
 </div>
+<li>
 </li>
 <li><p class="first">Under <strong>On-Prem</strong>, click <strong>Launch</strong> to access Prism Central for your on-premises Nutanix cluster.</p>
 </li>
