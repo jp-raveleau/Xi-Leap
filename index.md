@@ -219,7 +219,7 @@
 </li>
 <li><p class="first">Note the number of entities to be failed over as part of the plan. Click <strong>Failover</strong>.</p>
 <div class="figure">
-<img alt="../../_images/1519.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/1519.png" />
+<img alt="images/15bis.PNG" src="images/15bis.PNG" />
 </div>
 </li>
 <li><p class="first">Once the recovery plan updates to <strong>Running</strong>, click <strong>AppRP</strong> and select <strong>Tasks</strong> to view the current status. Continue to observe the failover, taking note of the different boot stages.</p>
