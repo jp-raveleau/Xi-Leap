@@ -14,32 +14,28 @@
     </head>
 
 <span id="xileap"></span><h1>vExpert Session - Frictionless DR with Xi Leap<a class="headerlink" href="#frictionless-dr-with-xi-leap" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>This lab has limited capacity. See a Xi Leap proctor at <strong>TABLE 6</strong> to <a class="reference external" href="https://docs.google.com/spreadsheets/d/1t4HaHDfVxGy5y7q8pwsz4_h5s_g2VHA3ec8Mj6z7TUM/edit#gid=0">sign up</a> for an available Xi Leap cluster.</p>
-<p class="last">Each environment will be available to a signed up user for a period of 1 hour, allowing for as many people to complete the lab as possible. Please prioritize the completion of this lab during your assigned time.</p>
-</div>
 <p>Legacy disaster recovery configurations, which are created with Prism Element, use protection domains and third-party integrations to protect VMs, and they replicate data between on- premises Nutanix clusters. Protection domains provide limited flexibility in terms of supporting operations such as VM boot order and require you to perform manual tasks to protect new VMs as an application scales up.</p>
 <p>Leap uses an entity-centric approach and runbook-like automation to recover applications. It uses categories to group the entities to be protected and to automate the protection of new entities as the application scales. Application recovery is more flexible with network mappings, configurable stages to enforce a boot order, and optional inter-stage delays. Application recovery can also be validated and tested without affecting production workloads. All the configuration information that an application requires upon failover are synchronized to the recovery location.</p>
 <p>You can use Leap between two physical data centers or between a physical data center and Xi Cloud Services. Leap works with pairs of physically isolated locations called availability zones. One availability zone serves as the primary location for an application while a paired availability zone serves as the recovery location. While the primary availability zone is an on-premises Prism Central instance, the recovery availability zone can be either on-premises or in Xi Cloud Services.</p>
 <p><strong>In this lab you will explore Xi Leap, configuring a Protection Policy, building a Recovery Plan, evaluating networking considerations, and perform a failover.</strong></p>
 <div class="section" id="accessing-your-lab-environment">
 <span id="accessingleaplab"></span><h2>Accessing Your Lab Environment<a class="headerlink" href="#accessing-your-lab-environment" title="Permalink to this headline">¶</a></h2>
-<p>This lab requires both a Nutanix Xi Leap cluster and a traditional on-premises Nutanix cluster. In this brief exercise you will retrieve the the connection and credential details that have been reserved for you.</p>
+<p>This lab requires both a Nutanix Xi Leap account and a traditional on-premises Nutanix cluster. In this brief exercise you will retrieve the the connection and credential details that have been reserved for you.</p>
 <ol class="arabic">
-<li><p class="first">Acquire your unique Xi Leap Lab account from a lab proctor.</p>
+<li><p class="first">Obtain your unique Xi Leap Test Drive account.</p>
 </li>
-<li><p class="first">Open <a class="reference external" href="http://labs.leap.nutanix.com/#/">http://labs.leap.nutanix.com/#/</a> in your browser.</p>
+<li><p class="first">Open <a class="reference external" href="https://testdrive.leap.nutanix.com">https://testdrive.leap.nutanix.com</a> in your browser. The VPN is required.</p>
 </li>
-<li><p class="first">Provide your Xi Leap Lab <strong>Email</strong> and click <strong>Get Setup Details</strong>.</p>
+<li><p class="first">Provide your <strong>contact informations</strong> and click <strong>Request Test Drive</strong>. Wait for the Nutanix e-mail with all credentials (look in your spam folder if necessary)</p>
 <div class="figure">
-<img alt="../../_images/1109.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/1109.png" />
+<img alt="../../_images/TestDrive.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/1109.png" />
+</div>
+</li>
+<div class="figure">
+<img alt="../../_images/mailreceived.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/1109.png" />
 </div>
 </li>
 <li><p class="first">Under <strong>On-Prem</strong>, click <strong>Launch</strong> to access Prism Central for your on-premises Nutanix cluster.</p>
-<div class="figure">
-<img alt="../../_images/280.png" src="https://s3.amazonaws.com/handsonworkshops.prod.media/ws/7311424032b04999b9c942bdc02dc5bb/i/file/548fe05ba29f4f13b5e8908b4a2c2a03/280.png" />
-</div>
 </li>
 <li><p class="first">Log in using the displayed <strong>Username</strong> and <strong>Password</strong>.</p>
 <div class="admonition note">
