@@ -30,14 +30,12 @@
 </li>
 <li><p class="first">Provide your <strong>contact informations</strong> and click <strong>Request Test Drive</strong>. Wait for the Nutanix e-mail with all credentials (look in your spam folder if necessary)</p>
 <div class="figure">
-<img alt="../../_images/TestDrive.png" src="../../_images/TestDrive.png" />
+<img alt="images/TestDrive.png" src="images/TestDrive.png" />
 </div>
 </li>
 <div class="figure">
-<img alt="../../_images/mailreceived.png" src="../../_images/mailreceived.png" />
+<img alt="images/mailreceived.png" src="images/mailreceived.png" />
 </div>
-<li>
-</li>
 <li><p class="first">Under <strong>On-Prem</strong>, click <strong>Launch</strong> to access Prism Central for your on-premises Nutanix cluster.</p>
 </li>
 <li><p class="first">Log in using the displayed <strong>Username</strong> and <strong>Password</strong>.</p>
